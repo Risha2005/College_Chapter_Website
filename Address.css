@@ -1,0 +1,105 @@
+.budha-chachu{
+    height: 6rem;
+}
+
+.address {
+    width: 50%;
+    height: 100vh;
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303a52;
+}
+
+.address h1 {
+    margin: 10px 10px;
+    padding: 0;
+    font-size: 5rem;
+}
+
+.address h2 {
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.address h4 {
+    margin: 10px;
+    padding: 0;
+}
+
+.address .socialLinks {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.address .socialLinks .socialIcons {
+    margin-top: 10px;
+    transition: all 0.2s linear;
+}
+
+.address a{
+    text-decoration: none;
+    color: #263859;
+    transition: all 0.2s linear;
+}
+
+.address a:hover h4{
+    color: #ff6768;
+}
+
+.address .socialLinks .fb:hover {
+    color: #3b5998;
+
+}
+
+.address .socialLinks .linkedIn:hover {
+    color: #2867B2;
+}
+
+.address .socialLinks .insta:hover {
+    color: #e4405f;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .address {
+        width: 100%;
+        height: 25vh;
+        background-color: #cccccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #303a52;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .address {
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .budha-chachu{
+        height: 3rem;
+    }
+
+    .address h1 {
+        margin: 5px;
+        font-size: 3rem;
+    }
+
+    .address h2 {
+        margin: 5px;
+    }
+
+    .address h4 {
+        margin: 5px;
+    }
+}

@@ -1,0 +1,94 @@
+.billboard {
+  height: 100vh;
+  width: 75%;
+  box-sizing: border-box;
+  padding-top: 7vh;
+  background-image: url("../../assets/Billboard/posterBG.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 75% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.billboard .posterLink {
+  /*height: 100%;*/
+  max-height: 70vh;
+}
+
+.billboard .poster {
+  /*height: 100%;*/
+  width: 60vw;
+  background-color: #00000005;
+}
+
+.billboard .links {
+  margin: 20px 0;
+}
+
+.billboard .links a {
+  margin: 0 20px;
+  padding: 10px 30px;
+  background-color: #42aca8;
+  border-radius: 100px;
+  color: #041554;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.billboard .links a:hover {
+  transition: all 0.6s linear;
+  color: #42aca8;
+  background-color:#041554;
+  border: 2px solid #42aca8;
+}
+
+@media screen and (max-width: 1024px) {
+  .billboard {
+    width: 70%;
+    border-right: 2px solid #20718d;
+  }
+
+  .billboard .posterLink {
+    width: 80%;
+    max-height: 700px;
+  }
+
+  .billboard .poster {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .billboard .poster {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .billboard {
+    width: 100%;
+    background-size: 100% 100%;
+  }
+
+  .billboard .posterLink {
+    height: auto;
+  }
+
+  .billboard .posterLink img{
+    height: 50vh;
+  }
+
+  .billboard .poster {
+    margin: 50px 2%;
+    width: 96%;
+    height: auto;
+  }
+
+  .billboard .links a {
+    margin: 0 10px;
+    padding: 5px 15px;
+  }
+}

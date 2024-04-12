@@ -1,0 +1,17 @@
+.contactUs{
+    min-height: 100%;
+    /*background: red;*/
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #303a52;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+    .contactUs{
+        flex-direction: column;
+    }
+}
